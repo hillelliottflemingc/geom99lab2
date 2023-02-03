@@ -25,3 +25,8 @@ https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/new_empty_lay
 Generating Token ID
 <br> Visit this site to do it:</br>
 https://developers.arcgis.com/documentation/mapping-apis-and-services/security/oauth-2.0/
+
+
+##########################################################
+
+My API Key: AAPKeedc10e9e2a84cdfb8886438b68976e1C2cX8KI4FcPLAd8TlQM6lAE4TfKdvcZ3mSkAlt7Srskpxak1pkB6289DMysvXEII
