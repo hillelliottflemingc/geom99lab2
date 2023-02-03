@@ -1,4 +1,5 @@
 GEOM99 Lab 2 Practical
+(All links provided from work completed in week 4)
 
 **URL 1: Developers Details Item Page**
 https://developers.arcgis.com/layers/1589ef37670c4d67a5ef0bb1494f963f
