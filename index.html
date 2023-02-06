@@ -42,6 +42,15 @@
  });
 
     
+    // Create featurelayer from feature service
+  const layer = new FeatureLayer({
+  // URL to the service
+  url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/new_empty_layer_created_for_g99_week_4/FeatureServer/0"
+  });
+  map.add(layer);
+    
+    
+    
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
 
@@ -65,15 +74,7 @@
  });
  graphicsLayer.add(pointGraphic);
 
-    
-    
-    
-     // Create featurelayer from feature service
-  const layer = new FeatureLayer({
-  // URL to the service
-  url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/new_empty_layer_created_for_g99_week_4/FeatureServer/0"
-  });
-  map.add(layer);
+  
 
     
  });
