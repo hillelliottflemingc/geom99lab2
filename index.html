@@ -22,12 +22,12 @@
     "esri/Map",
     "esri/views/MapView",
 
-    <!--"esri/Graphic",-->
-    <!--"esri/layers/GraphicsLayer",-->
+    "esri/Graphic",
+    "esri/layers/GraphicsLayer",
     
     "esri/layers/FeatureLayer"
 
-    ], function(esriConfig,Map, MapView, Graphic, FeatureLayer) {
+    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer FeatureLayer) {
 
   esriConfig.apiKey = "AAPKeedc10e9e2a84cdfb8886438b68976e1C2cX8KI4FcPLAd8TlQM6lAE4TfKdvcZ3mSkAlt7Srskpxak1pkB6289DMysvXEII";
     
@@ -51,6 +51,31 @@
   map.add(layer, 0);
     
     
+    
+ const graphicsLayer = new GraphicsLayer();
+ map.add(graphicsLayer);
+
+ const point = { //Create a point
+    type: "point",
+    longitude: -118.80657463861,
+    latitude: 34.0005930608889
+ };
+ const simpleMarkerSymbol = {
+    type: "simple-marker",
+    color: [226, 119, 40],  // Orange
+    outline: {
+        color: [255, 255, 255], // White
+        width: 1
+    }
+ };
+
+ const pointGraphic = new Graphic({
+    geometry: point,
+    symbol: simpleMarkerSymbol
+ });
+ graphicsLayer.add(pointGraphic);
+
+  
 
     
  });
