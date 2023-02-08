@@ -25,10 +25,10 @@
     "esri/Graphic",
     "esri/layers/GraphicsLayer",
     "esri/layers/FeatureLayer",
-    "esri/widgets/BasemapToggle",
-    "esri/widgets/BasemapGallery"
+    "esri/widgets/BasemapToggle"
+    
 
-    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer, FeatureLayer, BasemapToggle, BasemapGallery) {
+    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer, FeatureLayer, BasemapToggle) {
 
   esriConfig.apiKey = "AAPKd97a11c250324791a3406c5d2a9635da84Td19b1grnWyQ6tLF_zESwHM_G6Zp2hphVw1SRTr-OF8N4DeEOACsm_1MTuknKr"; //API Key from my own organizational account.
     
@@ -50,17 +50,6 @@
     
    view.ui.add(basemapToggle,"bottom-right");
     
-   const basemapGallery = new BasemapGallery({
-        view: view,
-        source: {
-          query: {
-            title: '"World Basemaps for Developers" AND owner:esri'
-          }
-        }
-      });
-
-      view.ui.add(basemapGallery, "top-right"); // Add to the view
-
     
     // Create featurelayer from feature service
   const layer = new FeatureLayer({
