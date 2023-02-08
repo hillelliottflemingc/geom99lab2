@@ -49,6 +49,17 @@
      });
     
    view.ui.add(basemapToggle,"bottom-right");
+    
+   const basemapGallery = new BasemapGallery({
+        view: view,
+        source: {
+          query: {
+            title: '"World Basemaps for Developers" AND owner:esri'
+          }
+        }
+      });
+
+      view.ui.add(basemapGallery, "top-right"); // Add to the view
 
     
     // Create featurelayer from feature service
