@@ -32,13 +32,13 @@
   esriConfig.apiKey = "AAPKd97a11c250324791a3406c5d2a9635da84Td19b1grnWyQ6tLF_zESwHM_G6Zp2hphVw1SRTr-OF8N4DeEOACsm_1MTuknKr"; //API Key from my own organizational account.
     
   const map = new Map({
-    basemap: "arcgis-topographic" //Basemap layer service
+    basemap: "osm-dark-gray" //Basemap layer service
   });
 
   const view = new MapView({
     map: map,
-    center: [-118.80500,34.02700], //Longitude, latitude
-    zoom: 13,
+    center: [-73.561668,45.508888], //Longitude, latitude
+    zoom: 7,
     container: "viewDiv"
  });
 
@@ -57,6 +57,7 @@
 
  const point = { //Create a point
     type: "point",
+    color: "pink",
     longitude: -118.80657463861,
     latitude: 34.0005930608889
  };
