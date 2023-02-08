@@ -24,10 +24,11 @@
 
     "esri/Graphic",
     "esri/layers/GraphicsLayer",
-    
-    "esri/layers/FeatureLayer"
+    "esri/layers/FeatureLayer",
+    "esri/widgets/BasemapToggle",
+    "esri/widgets/BasemapGallery"
 
-    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer, FeatureLayer) {
+    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer, FeatureLayer, BasemapToggle, BasemapGallery) {
 
   esriConfig.apiKey = "AAPKd97a11c250324791a3406c5d2a9635da84Td19b1grnWyQ6tLF_zESwHM_G6Zp2hphVw1SRTr-OF8N4DeEOACsm_1MTuknKr"; //API Key from my own organizational account.
     
@@ -41,6 +42,13 @@
     zoom: 7,
     container: "viewDiv"
  });
+    
+   const basemapToggle = new BasemapToggle({
+        view: view,
+        nextBasemap: "arcgis-imagery"
+     });
+    
+   view.ui.add(basemapToggle,"bottom-right");
 
     
     // Create featurelayer from feature service
