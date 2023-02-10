@@ -29,7 +29,7 @@
     
 
     ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer, FeatureLayer, BasemapToggle) {
-
+  
   esriConfig.apiKey = "AAPKd97a11c250324791a3406c5d2a9635da84Td19b1grnWyQ6tLF_zESwHM_G6Zp2hphVw1SRTr-OF8N4DeEOACsm_1MTuknKr"; //API Key from my own organizational account.
     
   const map = new Map({
@@ -50,7 +50,7 @@
     
    view.ui.add(basemapToggle,"bottom-right");
     
-    
+    // This wasn't working, I think it was an issue with the API key. But I was basically calling a feature layer created in my AGOL. I tried with my fleming account/ fleming API, and also my own developer's account. Both were not working. 
     // Create featurelayer from feature service
   const layer = new FeatureLayer({
   // URL to the service
